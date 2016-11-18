@@ -1,0 +1,37 @@
+{
+    "server" : {
+        "cache": "redis"
+    },
+    "connections" : [
+        {
+            "port": 3000,
+            "labels": ['api']
+        }
+    ],
+    "registrations": [
+        {
+            "plugin": {
+                "register": './lib/modules/complainant',
+                "options": {
+
+                }
+            }
+        },
+        {
+            "plugin": {
+                "register": './lib/modules/complaint',
+                "options": {
+
+                }
+            }
+        },
+        {
+            "plugin": {
+                "register": './lib/modules/organization',
+                "options": {
+
+                }
+            }
+        }                
+    ]
+}
